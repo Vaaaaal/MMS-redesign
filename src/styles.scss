@@ -372,7 +372,7 @@ $color-tertiary: #402929;
             .price-preview {
                 font-size: 2rem;
                 font-weight: bold;
-                letter-spacing: -2px;
+                letter-spacing: 0;
                 color: $color-tertiary;
                 opacity: 0.75;
             }
@@ -794,7 +794,7 @@ $color-tertiary: #402929;
             &:after {
                 content: "Retour à la boutique";
                 position: absolute;
-                width: 200px;
+                width: 220px;
                 left: 100%;
                 font-family: $font-secondary;
                 color: white;
@@ -892,7 +892,7 @@ $color-tertiary: #402929;
                     }
 
                     img {
-                        width: 200px;
+                        width: 80%;
                         height: 90%;
                         object-fit: contain;
                         margin: 0 auto;
@@ -939,14 +939,11 @@ $color-tertiary: #402929;
 
                     button {
                         border: none;
-                        height: 50px;
-                        width: 50px;
-                        border-radius: 100%;
-                        justify-self: center;
-                        background: $color-secondary;
-                        color: white;
+                        height: 50%;
+                        background: white;
+                        color: $color-secondary;
                         outline: none;
-                        font-size: 1.1rem;
+                        font-size: 1.5rem;
                         cursor: pointer;
 
                         @media screen and (max-width: 700px) {
