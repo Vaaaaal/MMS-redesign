@@ -9,6 +9,8 @@ import Promotion from "./Promotions";
 import Magasin from "./Magasin";
 
 const Home = () => {
+    document.title = "Home";
+
     return (
         <div className="Home">
             <img src={bgYellow} alt="Background yellow" className="bgImage" />

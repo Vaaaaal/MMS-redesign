@@ -63,6 +63,8 @@ const Product = () => {
         gsap.to(popup, 0, { y: 110, opacity: 1 });
     };
 
+    document.title = `Produit - ${name}`;
+
     return (
         <div className="Product">
             <Header basket />

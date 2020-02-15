@@ -10,6 +10,8 @@ import Header from "./Header";
 import RJ from "../images/rouge-jaune-perso.png";
 
 const Panier = () => {
+    document.title = "Panier";
+
     let history = useHistory();
 
     const [basket, setBasket] = useContext(BasketContext);
