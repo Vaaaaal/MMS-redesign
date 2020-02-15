@@ -71,10 +71,10 @@ $color-tertiary: #402929;
         .crispy {
             position: absolute;
             z-index: 3;
-            width: 38%;
-            min-width: 250px;
-            right: -5%;
-            bottom: -30%;
+            width: 20%;
+            min-width: 100px;
+            right: 4%;
+            bottom: -20%;
 
             @media screen and (max-width: 740px) {
                 & {
