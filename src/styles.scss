@@ -1,14 +1,9 @@
-// Official Fonts
-// @import url("https://www.fontify.me/wf/9b0c2e68d80eba036e5c0fb3a396ec1b");
-// @import url("https://www.fontify.me/wf/9fc2f534d2aeb7a71691b53f948fbf2f");
+@import url("https://www.fontify.me/wf/9b0c2e68d80eba036e5c0fb3a396ec1b");
+@import url("https://www.fontify.me/wf/9fc2f534d2aeb7a71691b53f948fbf2f");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap");
 
-// Official fonts
-// $font-primary: "font91422", sans-serif;
-// $font-secondary: "font76486", sans-serif;
-$font-primary: "Ropa Sans", sans-serif;
-$font-secondary: "Ropa Sans", sans-serif;
+$font-primary: font91422, sans-serif;
+$font-secondary: font76486, sans-serif;
 $font-tertiary: "Montserrat", sans-serif;
 $color-primary: #ffc72c;
 $color-secondary: #c50a1f;
@@ -76,10 +71,10 @@ $color-tertiary: #402929;
         .crispy {
             position: absolute;
             z-index: 3;
-            width: 20%;
-            min-width: 100px;
-            right: 4%;
-            bottom: -20%;
+            width: 38%;
+            min-width: 250px;
+            right: -5%;
+            bottom: -30%;
 
             @media screen and (max-width: 740px) {
                 & {
@@ -372,7 +367,7 @@ $color-tertiary: #402929;
             .price-preview {
                 font-size: 2rem;
                 font-weight: bold;
-                letter-spacing: 0;
+                letter-spacing: -2px;
                 color: $color-tertiary;
                 opacity: 0.75;
             }
@@ -395,6 +390,10 @@ $color-tertiary: #402929;
 
             @media screen and (max-width: 775px) {
                 padding: 0 10px 0 40px;
+            }
+
+            @media screen and (max-width: 425px) {
+                height: 15%;
             }
 
             &:before {
@@ -494,6 +493,16 @@ $color-tertiary: #402929;
                 align-items: center;
                 font-size: 1.3rem;
                 font-family: $font-secondary;
+                z-index: 15;
+
+                @media screen and (max-width: 775px) {
+                    padding: 0 10px 0 40px;
+                }
+
+                @media screen and (max-width: 425px) {
+                    position: fixed;
+                    height: 15%;
+                }
 
                 &:before {
                     position: absolute;
@@ -506,6 +515,14 @@ $color-tertiary: #402929;
 
                 p {
                     font-size: 1.7rem;
+
+                    @media screen and (max-width: 775px) {
+                        font-size: 1.5rem;
+                    }
+
+                    @media screen and (max-width: 375px) {
+                        font-size: 1.25rem;
+                    }
                 }
             }
 
@@ -794,7 +811,7 @@ $color-tertiary: #402929;
             &:after {
                 content: "Retour à la boutique";
                 position: absolute;
-                width: 220px;
+                width: 200px;
                 left: 100%;
                 font-family: $font-secondary;
                 color: white;
@@ -892,7 +909,7 @@ $color-tertiary: #402929;
                     }
 
                     img {
-                        width: 80%;
+                        width: 200px;
                         height: 90%;
                         object-fit: contain;
                         margin: 0 auto;
@@ -939,11 +956,14 @@ $color-tertiary: #402929;
 
                     button {
                         border: none;
-                        height: 50%;
-                        background: white;
-                        color: $color-secondary;
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 100%;
+                        justify-self: center;
+                        background: $color-secondary;
+                        color: white;
                         outline: none;
-                        font-size: 1.5rem;
+                        font-size: 1.1rem;
                         cursor: pointer;
 
                         @media screen and (max-width: 700px) {
